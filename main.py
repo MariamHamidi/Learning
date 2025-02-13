@@ -36,12 +36,7 @@ st.markdown(
         background: linear-gradient(to right, #ff7e5f, #feb47b);
     }
     </style>
-    """,
-    unsafe_allow_html=True
-)
 
-st.markdown(
-    """
     <style>
     body {
         color: #ff5733; /* Change text color */
@@ -50,6 +45,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 st.header("Recipe Generator 🍔")
 
