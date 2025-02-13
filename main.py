@@ -25,7 +25,16 @@ Recipe_template = "Give me {number} {type} recipes of {topic}"
 Recipe_prompt = PromptTemplate(template = Recipe_template, input_variables = ['number','topic','type'])
 recipe_chain = Recipe_prompt | gemini_model
 
-
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #D6F1ED;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.header("Recipe Generator 🍔")
 
 st.subheader("Generate recipes using Generative AI")
@@ -40,13 +49,4 @@ if st.button("Generate"):
     recipes = recipe_chain.invoke({"number" : number, "topic" : topic, "type" : type})
     st.write(recipes.content)
     
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #D6F1ED;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
