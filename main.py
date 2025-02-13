@@ -38,7 +38,7 @@ st.markdown(
     }
 
     /* Ensures all text inside the app uses Montserrat */
-    html, body, .stMarkdown, .stText, .stTitle, .stHeader, .stSubheader, .stButton {
+   .stTitle, .stHeader, .stSubheader {
         font-family: 'Montserrat', sans-serif !important;
     }
     </style>
