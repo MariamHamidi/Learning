@@ -29,6 +29,8 @@ st.header("Recipe Generator 🍔")
 
 st.subheader("Generate recipes using Generative AI")
 
+st.pills("Tags", ["Vegan", "Vegetarian", "Non-Vegetarian"])
+
 topic = st.text_input("Topic")
 
 number = st.number_input("Number of recipes", min_value = 1, max_value = 10, value = 1, step = 1)
