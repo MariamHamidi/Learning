@@ -25,7 +25,7 @@ Recipe_prompt = PromptTemplate(template = Recipe_template, input_variables = ['n
 recipe_chain = Recipe_prompt | gemini_model
 
 
-st.header("Recipe Generator 🎁")
+st.header("Recipe Generator 🍔")
 
 st.subheader("Generate recipes using Generative AI")
 
