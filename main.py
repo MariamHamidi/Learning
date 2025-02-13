@@ -36,10 +36,10 @@ st.markdown(
         background: linear-gradient(to right, #ff7e5f, #feb47b);
     }
     </style>
-
+    
     <style>
-    body {
-        color: #ff5733; /* Change text color */
+    .stApp {
+        body: color(#ffffff)
     }
     </style>
     """,
