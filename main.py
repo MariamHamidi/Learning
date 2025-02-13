@@ -40,3 +40,13 @@ if st.button("Generate"):
     recipes = recipe_chain.invoke({"number" : number, "topic" : topic, "type" : type})
     st.write(recipes.content)
     
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #D6F1ED;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
