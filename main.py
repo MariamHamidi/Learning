@@ -34,6 +34,6 @@ topic = st.text_input("Topic")
 number = st.number_input("Number of recipes", min_value = 1, max_value = 10, value = 1, step = 1)
 
 if st.button("Generate"):
-    tweets = recipe_chain.invoke({"number" : number, "topic" : topic})
-    st.write(tweets.content)
+    recipes = recipe_chain.invoke({"number" : number, "topic" : topic})
+    st.write(recipes.content)
     
