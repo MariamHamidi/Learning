@@ -20,7 +20,7 @@ gemini_model = ChatGoogleGenerativeAI(model = "gemini-1.5-flash-latest")
 # Create LLM chain using the prompt template and model
 tweet_chain = tweet_prompt | gemini_model
 
-Recipe_template = "Give me {number} recipes of {topic} where {type} can be chosen"
+Recipe_template = "Give me {number} {type} recipes of {topic}"
 Recipe_prompt = PromptTemplate(template = Recipe_template, input_variables = ['number','topic','type'])
 recipe_chain = Recipe_prompt | gemini_model
 
