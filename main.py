@@ -40,6 +40,17 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown(
+    """
+    <style>
+    body {
+        color: #333333;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.header("Recipe Generator 🍔")
 
 st.subheader("Generate recipes using Generative AI")
