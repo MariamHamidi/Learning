@@ -21,7 +21,7 @@ gemini_model = ChatGoogleGenerativeAI(model = "gemini-1.5-flash-latest")
 tweet_chain = tweet_prompt | gemini_model
 
 
-Recipe_template = "Give me {number} {type} recipes of {topic} with images"
+Recipe_template = "Give me {number} {type} recipes of {topic}"
 Recipe_prompt = PromptTemplate(template = Recipe_template, input_variables = ['number','topic','type'])
 recipe_chain = Recipe_prompt | gemini_model
 
