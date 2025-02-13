@@ -25,16 +25,21 @@ Recipe_template = "Give me {number} {type} recipes of {topic}"
 Recipe_prompt = PromptTemplate(template = Recipe_template, input_variables = ['number','topic','type'])
 recipe_chain = Recipe_prompt | gemini_model
 
+
+
+import streamlit as st
+
 st.markdown(
     """
     <style>
-    body {
-        background-color: #D6F1ED;
+    .stApp {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 st.header("Recipe Generator 🍔")
 
 st.subheader("Generate recipes using Generative AI")
