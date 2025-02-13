@@ -26,18 +26,20 @@ Recipe_prompt = PromptTemplate(template = Recipe_template, input_variables = ['n
 recipe_chain = Recipe_prompt | gemini_model
 
 
-
 st.markdown(
     """
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
     .stApp {
         background: linear-gradient(to right, #ff7e5f, #feb47b);
         color: #ffffff;  /* White text color */
+        font-family: 'Montserrat', sans-serif;
     }
 
-    /* Ensures all text inside the app is white */
-    .stMarkdown, .stTitle, .stHeader, .stSubheader {
-        color: #ffffff !important;
+    /* Ensures all text inside the app uses Montserrat */
+    html, body, .stMarkdown, .stText, .stTitle, .stHeader, .stSubheader, .stButton {
+        font-family: 'Montserrat', sans-serif !important;
     }
     </style>
     """,
