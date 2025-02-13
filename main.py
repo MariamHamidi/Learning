@@ -26,25 +26,23 @@ Recipe_prompt = PromptTemplate(template = Recipe_template, input_variables = ['n
 recipe_chain = Recipe_prompt | gemini_model
 
 
-
-import streamlit as st
-
 st.markdown(
     """
     <style>
     .stApp {
         background: linear-gradient(to right, #ff7e5f, #feb47b);
+        color: #ffffff;  /* White text color */
     }
-    </style>
-    
-    <style>
-    .stApp {
-        body: color(#ffffff)
+
+    /* Ensures all text inside the app is white */
+    .stMarkdown, .stText, .stTitle, .stHeader, .stSubheader {
+        color: #ffffff !important;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 
 st.header("Recipe Generator 🍔")
