@@ -44,7 +44,7 @@ st.markdown(
     """
     <style>
     body {
-        color: #333333;
+        color: #ff5733; /* Change text color */
     }
     </style>
     """,
